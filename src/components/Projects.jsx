@@ -1,6 +1,5 @@
 import './Projects.css'
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import githubUrl from '../assets/github_icon.svg'
 import websiteUrl from '../assets/website_icon.svg'
 
@@ -16,7 +15,7 @@ const descTextArr = [
     },
     {
         title: "HealthcarePal",
-        desc: "As part of course assignment in building a full-stack MERN app, I had the opportunity to work with a healthcare professional in designing and building a one-stop healthcare app for both patients and healthcare professionals. With improving the efficiency of healthcare administration in mind, we envisioned the app to cover functionalities such as appointment booking, appointment record-keeping and prescription management.",
+        desc: "As part of course assignment in building a full-stack MERN app, I had the opportunity to work with a healthcare professional in designing and building a one-stop healthcare Multi-Page App for both patients and healthcare professionals. With improving the efficiency of healthcare administration in mind, we envisioned the app to cover functionalities such as appointment booking, appointment record-keeping and prescription management.",
         stack: "MERN stack • Mongoose • React-Router • Bootstrap • FullCalendar.js",
         url: {
             website: "https://healthcarepal.cyclic.app/",
@@ -25,7 +24,7 @@ const descTextArr = [
     },
     {
         title: "NYT Film Review Bank",
-        desc: "I built a React-based Single-Page App using data fetched from the The New York Times Film Review API, which provides a library of archived film reviews since 1910s. The NYT API is also supplemented with the TMDB API for additional infos such as movie posters and average user scores. This provides a more user-friendly information on top of the reviews themselves.",
+        desc: "I built a React-based Single-Page App using data fetched from the New York Times Film Review API, which provides a library of archived film reviews since 1910s. The NYT API is also supplemented with the TMDB API for additional infos such as movie posters and average user scores. This provides a more user-friendly information on top of the reviews themselves.",
         stack: "React • React-Router • react-loading • react-circular-progressbar",
         url: {
             website: "https://nyt-film-library.vercel.app/",
