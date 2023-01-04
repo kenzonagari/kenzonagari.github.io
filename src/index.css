@@ -1,0 +1,22 @@
+:root {
+  --orange: rgb(179, 85, 22);
+  --offwhite: rgb(246, 244, 239);
+  --red: rgb(168, 24, 36);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: rgb(137, 113, 96);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(166, 140, 121);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,205 @@
+.project-page {
+    background-color: rgb(221, 219, 214);
+    min-height: max-content;
+    overflow: hidden;
+}
+
+.project-page h1 {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    font-size: 3.75em;
+    letter-spacing: 0.1em;
+    color: var(--red);
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card {
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 0px rgb(215, 153, 153);
+    cursor: pointer;
+    /* border-radius: 5px; */
+}
+
+.card:hover {
+    animation: hover-up 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    box-shadow: 3px 5px 0px rgb(215, 153, 153);
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes hover-up {
+    0% {}
+    100% {transform: translateY(20px);}
+
+}
+
+.project-img {
+    background-color: rgb(99, 99, 99);
+    width: 300px;
+    height: 375px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: fit-content;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    margin-bottom: 7vh;
+}
+
+.fast-fade-up {
+    animation: fast-fade-up 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fast-fade-up {
+    0% {opacity: 0; transform: translateY(10px);}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.project-text h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: var(--red);
+    width: 35vw;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.project-text .desc-text {
+    color: black;
+    font-size: 1.15em;
+    width: 40vw;
+    padding-left: 2vw;
+}
+
+.project-text .serif {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--red);
+}
+
+.box-1 {
+    /* transform: rotate(-5deg); */
+    background-image: url("../assets/gudfud_ss.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: grayscale(100%); */
+}
+
+.box-2 {
+    /* transform: rotate(2deg) translateY(-50px); */
+    background-image: url("../assets/healthcarepal_ss.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-3 {
+    /* transform: rotate(5deg); */
+    background-image: url("../assets/nyt_ss.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-4 {
+    /* transform: rotate(-2deg) translateY(-75px); */
+    background-image: url("../assets/minesweeper_ss.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-5 {
+    /* transform: rotate(2deg); */
+    background-image: url("../assets/wordle_ss.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-6 {
+    /* transform: rotate(-3deg) translateY(50px); */
+    background-image: url("../assets/tetris_ss.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lift-up {
+    display: inline-block;
+    transform: translateY(-10px);
+}
+
+.lift-down {
+    display: inline-block;
+    transform: translateY(10px);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vw;
+}
+
+@media (max-width: 40em){
+    .project-page h1 {
+        font-weight: 700;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        color: var(--red);
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+
+    .project-cards {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card {
+        margin: 5px;
+    }
+
+    .project-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text h2 {
+        font-size: 2em;
+        width: fit-content;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .project-text .desc-text {
+        font-size: 1.15em;
+        width: fit-content;
+        text-align: left;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
