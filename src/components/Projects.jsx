@@ -76,7 +76,7 @@ export default function Projects () {
 
     for(let i = 1 ; i <= 6 ; i++){
         cardElements.push(
-            <a href={descTextArr[i-1].url.website} className={`card project-img box-${i}`} key={i} onMouseEnter={handleChangeDesc(i-1)} target="_blank" />
+            <a className={`card project-img box-${i}`} key={i} onMouseEnter={handleChangeDesc(i-1)} />
         )
     }
 
