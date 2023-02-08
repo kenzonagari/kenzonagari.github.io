@@ -9,7 +9,7 @@ const descTextArr = [
         desc: "Motivated by my desire to gain a bit of weight, I built a nutritional tracker app which takes in users' recipes or list of ingredients as input, and returns their corresponding caloric amount and nutritional contents. The project allowed me to deepen my understanding of PostgresQL and relational database, and it also gave me the opportunity to combine CRUD database and data from an external API.",
         stack: "PERN stack • Prisma • React-Router • Tailwind • Chart.js • JWT • Udici",
         url: {
-            website: "/#",
+            website: "https://gudfud.herokuapp.com/",
             github: "https://github.com/kenzonagari/SEIF10-Project4"
         }
     },
@@ -76,7 +76,7 @@ export default function Projects () {
 
     for(let i = 1 ; i <= 6 ; i++){
         cardElements.push(
-            <a className={`card project-img box-${i}`} key={i} onMouseEnter={handleChangeDesc(i-1)} />
+            <a href={descTextArr[i-1].url.website} className={`card project-img box-${i}`} key={i} onMouseEnter={handleChangeDesc(i-1)} target="_blank" />
         )
     }
 
@@ -89,8 +89,7 @@ export default function Projects () {
             <div className={`project-text ${classFadeUp}`}>
                 <h2>{descTextArr[descText].title}</h2>
                 <div>
-                    <p className="desc-text">{descTextArr[descText].desc} <br /><br />
-                    {descText === 0 ? <i>Website coming soon!</i> : ""}</p>
+                    <p className="desc-text">{descTextArr[descText].desc} <br /><br /></p>
                     <p className="desc-text serif">{descTextArr[descText].stack}</p>
                     <div className='icons'>
                         <a href={descTextArr[descText].url.github} target="_blank">
